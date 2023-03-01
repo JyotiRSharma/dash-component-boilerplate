@@ -59,10 +59,11 @@ if install_deps != 'True':
     sys.exit(0)
 
 # Create a virtual env
-if sys.version.split(' ')[0] > '3.2':
-    venv = '{} -m venv venv'.format(sys.executable)
-else:
-    venv = 'virtualenv venv'
+venv = 'python3 -m venv venv'
+# if sys.version.split(' ')[0] > '3.2':
+#     venv = '{} -m venv venv'.format(sys.executable)
+# else:
+#     venv = 'virtualenv venv'
 
 # noinspection PyBroadException
 try:
